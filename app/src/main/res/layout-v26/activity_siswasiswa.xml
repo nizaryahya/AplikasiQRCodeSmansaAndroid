@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgrndbagus"
+    tools:context=".SiswaSiswaActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp">
+        <ImageView
+            android:id="@+id/backlogsiswa"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/backk"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+    <!--login-->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:textColor="@color/dodge"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:text="LOG IN SISWA" />
+    <!--email-->
+    <EditText
+        android:id="@+id/nissiswalogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/nimm"
+        android:inputType="textEmailAddress"
+        android:textColorLink="#270404" />
+    <!--password-->
+    <EditText
+        android:id="@+id/passsiswalogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/pass"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_alignTop="@+id/nissiswalogin"
+        android:layout_marginTop="60dp"/>
+    <!--show hide-->
+    <TextView
+        android:id="@+id/showlogsiswa"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/passsiswalogin"
+        android:layout_alignTop="@id/passsiswalogin"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/hitam"
+        android:ems="10"
+        android:text="@string/show"/>
+    <!--masuk-->
+    <Button
+        android:id="@+id/buttonmasuksiswa"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:layout_alignTop="@id/passsiswalogin"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/custombutton"
+        android:text="MASUK"
+        android:textSize="16sp" />
+    <!--buatakun-->
+
+    <Button
+        android:id="@+id/tomboldaftar"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/buttonmasuksiswa"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginRight="54dp"
+        android:background="@drawable/custombutton"
+        android:text="DAFTAR"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonmasuksiswa"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="70dp"
+        android:text="Belum Punya Akun ?"
+        android:textColor="#070707" />
+</RelativeLayout>

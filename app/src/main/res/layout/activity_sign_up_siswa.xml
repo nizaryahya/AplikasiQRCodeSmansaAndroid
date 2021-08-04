@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgrndbagus"
+    tools:context=".SignUpSiswa">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createaccount"
+        android:text="@string/buatakun"
+        android:textColor="@color/dodge"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal" />
+    <!-- nim-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/createaccount"
+        android:layout_marginTop="40dp"
+        android:text="@string/maha"
+        android:textColor="@color/putih"
+        android:layout_centerInParent="true"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+    <!--nim-->
+    <EditText
+        android:id="@+id/nimsiswasignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView2"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_centerInParent="true"
+        android:textColor="@color/hitam"
+        android:hint="@string/nimm"
+        android:autofillHints="@string/nimm" />
+    <!--nama-->
+    <EditText
+        android:id="@+id/namasiswasignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/nimsiswasignup"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_centerInParent="true"
+        android:textColor="@color/hitam"
+        android:hint="@string/namaa"
+        android:autofillHints="@string/namaa"/>
+
+    <!--ttl-->
+    <EditText
+        android:id="@+id/ttlsiswasignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/nimsiswasignup"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_centerInParent="true"
+        android:textColor="@color/hitam"
+        android:hint="Tempat, Tanggal Lahir"
+        android:autofillHints="@string/namaa"/>
+
+    <!--jeniskelamin-->
+    <EditText
+        android:id="@+id/jeniskelaminsiswasignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/nimsiswasignup"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="150dp"
+        android:autofillHints="@string/namaa"
+        android:ems="10"
+        android:hint="Jenis Kelamin"
+        android:inputType="textPersonName"
+        android:textColor="@color/hitam" />
+
+    <!--alamat-->
+    <EditText
+        android:id="@+id/alamatsiswasignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/nimsiswasignup"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_centerInParent="true"
+        android:textColor="@color/hitam"
+        android:hint="Alamat"
+        android:autofillHints="@string/namaa"/>
+
+    <!--email-->
+    <EditText
+        android:id="@+id/emailsiswasignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/namasiswasignup"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/hitam"
+        android:layout_centerInParent="true"
+        android:hint="@string/email"
+        android:autofillHints="@string/email"/>
+    <!--password-->
+    <EditText
+        android:id="@+id/passsiswasignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/emailsiswasignup"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/hitam"
+        android:hint="@string/pass"
+        android:autofillHints="@string/pass"/>
+    <!--show/hide-->
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/passsiswasignup"
+        android:layout_alignTop="@id/passsiswasignup"
+        android:layout_marginLeft="167dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:text="@string/show"/>
+    <!--sign up-->
+    <Button
+        android:id="@+id/buttondaftarsiswa"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:layout_alignTop="@+id/passsiswasignup"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="97dp"
+        android:background="@drawable/custombutton"
+        android:text="DAFTAR" />
+    <!--log in-->
+    <Button
+        android:id="@+id/kembalikelogin"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:layout_alignTop="@id/buttondaftarsiswa"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/custombutton"
+        android:text="MASUK" />
+
+
+
+</RelativeLayout>

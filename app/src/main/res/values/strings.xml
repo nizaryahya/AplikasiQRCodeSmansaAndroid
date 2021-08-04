@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">QR Code Smansa</string>
+    <string name="nama">SMANSA\nABSENSI</string>
+    <string name="awal">Selamat Datang,\nAbsensi SMA N 1 Muntok</string>
+    <string name="maha">Siswa</string>
+    <string name="dosen">Guru</string>
+    <string name="info">Info</string>
+    <string name="tentang">Tentang</string>
+    <string name="login">Log In</string>
+    <string name="email">E-mail</string>
+    <string name="pass">Password</string>
+    <string name="masuk">Log In</string>
+    <string name="Akun">Sign Up</string>
+    <string name="list">List\nKehadiran</string>
+    <string name="absen">Absen</string>
+    <string name="code">QR\nCode</string>
+    <string name="kelas">Kriptografi\nA11.4606</string>
+    <string name="kode">A11.4601</string>
+    <string name="logout">Log Out</string>
+    <string name="nipp">NIP</string>
+    <string name="namaa">Nama</string>
+    <string name="nimm">NIS</string>
+    <string name="buatakun">Create Account</string>
+    <string name="show">SHOW</string>
+    <string name="team">Keluar</string>
+
+</resources>
