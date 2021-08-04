@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MasukGuru">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/putih">
+            <!--gambar user-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/logobaru"
+                />
+            <!--nama user-->
+            <TextView
+                android:id="@+id/namagurumasuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMANSA"
+                android:textSize="24sp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/hitam"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+            <!--nip user-->
+            <TextView
+                android:id="@+id/nipgurumasuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Id Petugas"
+                android:textColor="@color/hitam"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgrndbagus">
+        <!--button list kehadiran-->
+        <!--button absen-->
+        <Button
+            android:id="@+id/buttonlist"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@color/put"
+            android:text="List Siswa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.201" />
+
+        <Button
+            android:id="@+id/buttonabsen"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignStart="@id/buttonlist"
+            android:layout_alignLeft="@id/buttonlist"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/put"
+            android:text="Scan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.201" />
+
+        <Button
+            android:id="@+id/outguru"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@color/red"
+            android:text="@string/logout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.800" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MasukSiswa">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/putih">
+            <!--gambar user-->
+            <ImageView
+                android:id="@+id/keprofil"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/logobaru" />
+            <!--nama user-->
+            <TextView
+                android:id="@+id/namasiswamasuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMANSA"
+                android:textSize="24sp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/hitam"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+            <!--nip user-->
+            <TextView
+                android:id="@+id/nissiswamasuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nis Siswa"
+                android:textColor="@color/hitam"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgrndbagus">
+        <!--button QR code-->
+
+        <Button
+            android:id="@+id/buttoncode"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@color/put"
+            android:text="@string/code"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.201" />
+
+        <Button
+            android:id="@+id/logoutsiswa"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@color/red"
+            android:text="Log Out"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.800" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

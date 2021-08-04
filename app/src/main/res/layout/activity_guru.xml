@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgrndbagus"
+    tools:context=".GuruActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/backlogguru"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/backk"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOG IN PETUGAS"
+        android:textColor="@color/dodge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:textStyle="bold"
+        android:textSize="32sp" />
+    <!--input nip-->
+    <EditText
+        android:id="@+id/nipgurulogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/nipp"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_centerInParent="true"
+        android:layout_alignTop="@id/textView4"/>
+    <!--input password-->
+    <EditText
+        android:id="@+id/passgurulogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/pass"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_alignTop="@id/nipgurulogin"
+        android:layout_marginTop="60dp"/>
+    <TextView
+        android:id="@+id/showpassguru"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/passgurulogin"
+        android:layout_alignTop="@id/passgurulogin"
+        android:text="@string/show"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="15dp"/>
+    <!--button masuk-->
+    <Button
+        android:id="@+id/buttonmasukguru"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:layout_alignTop="@id/passgurulogin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="140dp"
+        android:text="MASUK"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="16sp"
+        android:background="@drawable/custombutton"/>
+    <!--button akun baru-->
+
+    <Button
+        android:id="@+id/buttonsignupguru"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/buttonmasukguru"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginRight="54dp"
+        android:background="@drawable/custombutton"
+        android:text="DAFTAR"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonmasukguru"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="35dp"
+        android:paddingLeft="70dp"
+        android:text="Belum Punya Akun ?"
+        android:textColor="#070707" />
+</RelativeLayout>
